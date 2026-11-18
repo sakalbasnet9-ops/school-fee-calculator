@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Fee Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>School Fee Calculator</h1>
+        <p>Student Fee Management System</p>
+
+        <form id="feeForm">
+
+            <label>Student Name</label>
+            <input type="text" id="name" placeholder="Enter Student Name" required>
+
+            <label>Roll Number</label>
+            <input type="number" id="roll" placeholder="Enter Roll Number" required>
+
+            <label>Select Class</label>
+            <select id="class">
+                <option>Class 11</option>
+                <option>Class 12</option>
+            </select>
+
+            <h3>Fee Categories</h3>
+
+            <label>Admission Fee (Rs.)</label>
+            <input type="number" id="admission" value="2000" min="0">
+
+            <label>Tuition Fee (Rs.)</label>
+            <input type="number" id="tuition" value="5000" min="0">
+
+            <label>Computer Fee (Rs.)</label>
+            <input type="number" id="computer" value="1000" min="0">
+
+            <label>Library Fee (Rs.)</label>
+            <input type="number" id="library" value="500" min="0">
+
+            <label>Transportation Fee (Rs.)</label>
+            <select id="bus">
+                <option value="0">No</option>
+                <option value="2000">Yes</option>
+            </select>
+
+            <label>Scholarship Discount (Rs.)</label>
+            <input type="number" id="discount" value="0" min="0">
+
+            <button type="submit">Calculate Fee</button>
+
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
